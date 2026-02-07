@@ -10,11 +10,12 @@ function App() {
       <Routes>
       <Route
           path="/"
-          element={<Header />}
+          
+          element={<MoneyTalk />}
         />
         <Route
           path="/how-to-be-rich-effective-practical-guides"
-          element={<MoneyTalk />}
+          
         />
 
         <Route path="/login" element={<Login />} />
