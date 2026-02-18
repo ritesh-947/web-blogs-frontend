@@ -16,7 +16,7 @@ const blogs = [
     title: "Startup Talk: Jobs vs Building Something of Your Own",
     description:
       "Why chasing comfort jobs holds students back, and how startups, problem-solving, and value creation can lead to massive impact and wealth.",
-    image: "../../public/startup_talk.png",
+    image: "/startup_talk.png",
     date: "25 Jan 2026",
     link: "/blogs/job-vs-startup",
     content: [
