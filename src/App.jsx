@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import MoneyTalk from "./Money_talk/money_talk";
 import Login from "./Login_page/Login";
+import SignUp from './Login_page/SignUp';
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           element={<MoneyTalk />}
         />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </div>
   );
