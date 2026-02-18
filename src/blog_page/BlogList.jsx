@@ -9,7 +9,7 @@ const blogs = [
       "Learn how money works, how to earn money, how to be self-employed, how money flows, how to start a business — all in one blog!",
     image: "/money_secret.png",
     date: "10 Dec 2025",
-    link: "https://wanloft.com/how-to-be-rich-effective-practical-guides",
+    link: "/how-to-be-rich-effective-practical-guides",
   },
   {
     id: 2,
@@ -17,8 +17,8 @@ const blogs = [
     description:
       "Why chasing comfort jobs holds students back, and how startups, problem-solving, and value creation can lead to massive impact and wealth.",
     image: "../../public/startup_talk.png",
-    date: "15 Feb 2026",
-    link: "/startup-talk",
+    date: "25 Jan 2026",
+    link: "/blogs/job-vs-startup",
     content: [
       "From Rich Dad Poor Dad, I read that the acronym of JOB is Just Over Job. Whether you agree or not, a stable high-paying job attracts most students. But it’s disappointing to see how few are eager to work on their own ideas. If the same dedication and effort were put into a startup idea, many could build million-dollar ventures. If a product solves a real user problem, improves experience, or removes pain points, people will pay for it. With the internet at our fingertips, a web app or mobile app can instantly reach millions. Even if only one million people use it, ads alone can make you a multimillionaire within a year.",
       
