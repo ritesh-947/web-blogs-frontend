@@ -1,0 +1,114 @@
+h1{
+    color:rgb(63, 63, 250);
+}
+
+.yellow{
+    color:rgb(212, 255, 0);
+    background-color: red;
+}
+
+.utkarsh{
+    font-size: 20px;
+    color:brown;
+}
+img{
+    border-radius:10%;
+    max-width:100%;
+    max-height: 200px;
+
+}
+.container{
+    /* display:flex; */
+
+}
+
+.button{
+    background-color: green;
+    color: white;
+}
+
+.whatsapp-btn{
+    font-size:16px;
+    color:white;
+    padding:10px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgb(8, 166, 8);
+    font-weight:bold;
+    display:block;
+    /* width:50%; */
+    max-width:225px;
+}
+.whatsapp-btn:hover{
+    background-color: rgb(20, 140, 20);
+}
+
+
+.price{
+    color:black;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.sub-description{
+    display:inline;
+    font-size: 15px;
+    color:rgb(237, 18, 18)
+}
+
+.first-li{
+    margin-top:-10px;
+    
+}
+
+.problem{
+    margin-top: 10px;
+}
+
+.problem-description{
+    border:2px solid rgb(152, 152, 172);
+    border-radius: 10px;
+    padding: 10px 5px;
+    /* color:white; */
+    background-color: rgb(204, 255, 255);
+    margin-top: -10px;
+    text-align: justify;
+}
+
+li{
+    margin-left:-15px;
+}
+
+img{
+    margin-top: -10px;
+}
+
+.wanloft{
+    /* position: absolute; */
+    font-size:16px;
+    margin-bottom: -10px;
+    padding: 0px;
+    display:inline;
+    /* background-color: green; */
+    border-bottom: 2px solid black;
+}
+
+.wanloft-img{
+    width:20px;
+}
+
+.wanloft-link{
+    text-decoration: none;
+}
+
+.footer{
+    display:flex;
+    gap:16px;
+    margin-top: 20px;
+}
+
+.free{
+    background-color: rgb(48, 48, 212);
+    display:inline-block;
+}
