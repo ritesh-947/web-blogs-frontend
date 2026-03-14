@@ -4,6 +4,11 @@ body{
 
 h1{
     color:rgb(63, 63, 250);
+    margin-top:30px;
+}
+
+p{
+    font-size:17px;
 }
 
 .yellow{
@@ -32,9 +37,9 @@ img{
 }
 
 .whatsapp-btn{
-    font-size:16px;
+    font-size:18px;
     color:white;
-    padding:10px;
+    padding:12px;
     text-decoration: none;
     border-radius: 10px;
     background-color: rgb(8, 166, 8);
@@ -57,7 +62,7 @@ img{
 
 .sub-description{
     display:inline;
-    font-size: 15px;
+    font-size: 18px;
     color:rgb(237, 18, 18)
 }
 
@@ -67,7 +72,7 @@ img{
 }
 
 .problem{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .problem-description{
@@ -82,6 +87,7 @@ img{
 
 li{
     margin-left:-15px;
+    font-size: 17px;
 }
 
 img{
@@ -90,12 +96,18 @@ img{
 
 .wanloft{
     /* position: absolute; */
-    font-size:16px;
+    font-size:18px;
     margin-bottom: -10px;
-    padding: 0px;
-    display:inline;
+    padding: 10px;
+    padding-bottom: 5px;
+    background-color: white;
+
+    /* display:inline; */
     /* background-color: green; */
-    border-bottom: 2px solid black;
+    border: 2px solid black;
+    border-style:double;
+    position:sticky;
+    top: 0;
 }
 
 .wanloft-img{
@@ -104,6 +116,7 @@ img{
 
 .wanloft-link{
     text-decoration: none;
+    /* size:100px; */
 }
 
 .footer{
