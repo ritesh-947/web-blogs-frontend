@@ -1,274 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wanloft - Your Favorite place to meet experts</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { height: 100vh; overflow: hidden; }
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanloft - Your Favorite place to meet experts</title>
+  </head>
+  <body>
+    <h2 class="wanloft">
+      <a class="wanloft-link" href="wanloft.com" target="_blank"><img alt="wanloft logo" class="wanloft-img" src="./public/IMG_1152.png">
+      </a>
+      Wanloft - Our future starts with today !
+    </h2>
+    <h2 class="problem">Hey friend, are you confused with your <span class="yellow">career?</span></h2>
+    <!-- <h3>Forget AI & Meet Our Experts! May be you need a break from 
+    work and take guidance from industry experts.</h3> -->
+    <p class="problem-description">We're on a mission to help people meet 
+      industrial experts 1:1 who can clear your doubts, provide
+      you a roadmap and help you build real-world skills
+      and products. If price feels barrier to your
+      learning then request us a free session & we'll
+      be happy to make the session absolutely FREE.
+      
+      <!-- So take a look at the below experts
+      who can guide you for your career, business or 
+      self-development. -->
+    </p>
+    <div class="container">
+      <div class="about-utkarsh">
+        
+      <h3 class="utkarsh">Hello I'm Utkarsh Tiwari.<p class="sub-description"> I'm an AI engineer, System Architect and Full-Stack Developer.</p></h3>
+      <img class="utkarsh-img" src="./public/utkarsh_tiwari.jpeg" width = "400px" height=auto>
 
-    /* Top Menu Button */
-    .menu-btn {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      font-size: 24px;
-      cursor: pointer;
-      z-index: 1000;
-      background: #111;
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 8px;
-    }
+      <p class="price">Opportunity: ₹90 per 45 Mins</p>
+      <a
+      href="https://wa.me/918658880791?text=Hello%2C%20Please%20Book%20my%20Session%20with%20Utkarsh%20Tiwari%2E"
+      target="_blank"
+      class="whatsapp-btn">
+      Book Session With Utkarsh
+      <i class="fa-solid fa-comment chat-icon"></i>
+      </a>
+    </p>
+      <h3>What can I help you build?</h3>
+      <ol>
+        <li class="first-li">AI that can talk and listen (voice assistants
+          on phone calls)</li>
+           
+        <li>AI that can follow steps and
+        make decisions (automation)</li>
+        <li> AI that answers questions using company data</li>
+        <li>AI-powered resume builder and optimizer</li>
+         <li>Scalable backend Platform</li>
+        <li>AI-powered Market Intelligence</li>
+      </ol>
+      
 
-    /* Sidebar Menu */
-    .menu {
-      position: fixed;
-      top: 0;
-      right: -250px;
-      width: 250px;
-      height: 100%;
-      background: #111;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      padding: 100px 20px 20px 20px;
-      gap: 20px;
-      transition: 0.4s;
-      z-index: 999;
-    }
+      <a
+      href="https://wa.me/918658880791?text=Hello%2C%20Please%20Book%20my%20Session%20with%20Utkarsh%20Tiwari%20For%20Free%2E"
+      target="_blank"
+      class="whatsapp-btn free">
+      Request a Free Session
+      <i class="fa-solid fa-comment chat-icon"></i>
+      </a>
 
-    .menu.active {
-      right: 0;
-    }
-
-    .menu a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      transition: 0.3s;
-    }
-
-    .menu a:hover {
-      color: #00ffcc;
-    }
-
-    /* Bottom Circles */
-    .sidebar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 80px;
-      background: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .sidebar div {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: #333;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: 0.3s;
-      opacity: 0.6;
-    }
-
-    .sidebar div.active {
-      background: #00ffcc;
-      color: #000;
-      transform: scale(1.2);
-      opacity: 1;
-    }
-
-    /* Content */
-    .content {
-      position: relative;
-      height: calc(100vh - 80px);
-      overflow: hidden;
-      background: #f5f5f5;
-    }
-
-    .card {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      padding: 40px;
-      text-align: center;
-      opacity: 0;
-      transform: translateY(100px);
-      transition: all 0.6s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .card.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    h2 { width: 100%; margin-bottom: 10px; }
-
-    p { width: 100%; max-width: 600px; margin-bottom: 20px; }
-
-    button {
-      width: 100%;
-      max-width: 300px;
-      padding: 12px;
-      border: none;
-      background: #111;
-      color: #fff;
-      cursor: pointer;
-      border-radius: 25px;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: #00ffcc;
-      color: #000;
-    }
-  /* Logo */
-    .logo {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: bold;
-      font-size: 18px;
-      color: #111;
-    }
-
-    .logo img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Logo -->
-  <div class="logo">
-    <img src="./public/IMG_1152.png" />
-    <span>Wanloft</span>
-  </div>
-
-  <!-- Menu Button -->
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
-
-  <!-- Side Menu -->
-  <div class="menu" id="menu">
-    <a href="#">Home</a>
-    <a href="#">About Us</a>
-    <a href="#">Blogs</a>
-    <a href="/terms-of-condition.html">Terms & Conditions</a>
-  </div>
-
-  <div class="content" id="content">
-    <div class="card active">
-      <img src="./public/utkarsh_tiwari.jpeg" />
-      <h2>Utkarsh Tiwari</h2>
-      <p>Build smarter, faster, and future-ready solutions with Utkarsh. Create voice AI assistants, automation systems, smart chatbots using company data, resume optimizers, scalable backend platforms, and market intelligence tools—turning your ideas into powerful real-world products with expert guidance.</p>
-      <button>Book Session with Utkarsh</button>
     </div>
      
-
-    <!-- <div class="card">
-      <img src="https://picsum.photos/300?2" />
-      <h2>Author 2</h2>
-      <p>This is about Author 2. Loves creativity and innovation.</p>
-      <button>Book Session with Author 2</button>
     </div>
 
-    <div class="card">
-      <img src="https://picsum.photos/300?3" />
-      <h2>Author 3</h2>
-      <p>This is about Author 3. Expert in motivation and growth.</p>
-      <button>Book Session with Author 3</button>
+    <div class="footer">
+      <a href="/terms-of-condition.html">
+        Terms of Condition
+      </a>
+      <a href="/about-us.html">
+        About Us
+      </a>
+      <a href="/blogs.html">
+        Blogs
+      </a>
     </div>
+    <p>© 2026 Wanloft. All rights reserved</p>
 
-    <div class="card">
-      <img src="https://picsum.photos/300?4" />
-      <h2>Author 4</h2>
-      <p>This is about Author 4. Focused on business and startups.</p>
-      <button>Book Session with Author 4</button>
-    </div>
-
-    <div class="card">
-      <img src="https://picsum.photos/300?5" />
-      <h2>Author 5</h2>
-      <p>This is about Author 5. Loves teaching and mentoring.</p>
-      <button>Book Session with Author 5</button>
-    </div>
-  </div> -->
-
-  <div class="sidebar">
-    <div class="active" onclick="showSlide(0)">1</div>
-    <div onclick="showSlide(1)">2</div>
-    <div onclick="showSlide(2)">3</div>
-    <div onclick="showSlide(3)">4</div>
-    <div onclick="showSlide(4)">5</div>
-  </div>
-
-  <script>
-    const cards = document.querySelectorAll('.card');
-    const numbers = document.querySelectorAll('.sidebar div');
-    let current = 0;
-    let isScrolling = false;
-
-    function showSlide(index) {
-      cards.forEach((card, i) => {
-        card.classList.remove('active');
-        numbers[i].classList.remove('active');
-      });
-
-      cards[index].classList.add('active');
-      numbers[index].classList.add('active');
-      current = index;
-    }
-
-    document.getElementById('content').addEventListener('wheel', (e) => {
-      if (isScrolling) return;
-
-      isScrolling = true;
-
-      if (e.deltaY > 0) {
-        current = (current + 1) % cards.length;
-      } else {
-        current = (current - 1 + cards.length) % cards.length;
-      }
-
-      showSlide(current);
-
-      setTimeout(() => { isScrolling = false; }, 700);
-    });
-
-    function toggleMenu() {
-      document.getElementById('menu').classList.toggle('active');
-    }
-  </script>
-
-</body>
+    
+    <!-- <div id="root"></div> -->
+    <!-- <script type="module" src="/src/main.jsx"></script> -->
+  </body>
 </html>
